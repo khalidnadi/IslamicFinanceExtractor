@@ -1,0 +1,79 @@
+{
+  "id": "44309e43-e23e-44ad-b962-63573b9936a5",
+  "version": "2.0",
+  "name": "test1",
+  "url": "https://advance.lexis.com",
+  "tests": [{
+    "id": "0e85c5b8-8465-4ba1-a7e7-b03de9faa0b3",
+    "name": "Test1.1",
+    "commands": [{
+      "id": "081b134e-50ea-468d-bae3-5063843148c2",
+      "comment": "",
+      "command": "open",
+      "target": "/search/?pdmfid=1516831&crid=c27ebe07-ec61-43d2-8620-f9a82776afc4&pdsearchterms=islamic+finance%2C+islamic+banking&pdstartin=hlct%3A1%3A1&pdtypeofsearch=searchboxclick&pdsearchtype=SearchBox&pdqttype=and&pdpsf=&pdquerytemplateid=&ecomp=6pqgkgk&earg=pdpsf&prid=8b4eba1c-0a0a-4dcb-a0bb-9f3853ef71f9",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c60a14eb-38fa-49b8-b7a7-8c0293e22912",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9eedb3e-701b-44ca-839c-aaaacbdd6c54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hideInMobile > input",
+      "targets": [
+        ["css=.hideInMobile > input", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[163]", "xpath:attributes"],
+        ["xpath=//div[@id='results-list-delivery-toolbar']/div/ul/li/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b3c92b0-c311-4046-a3f9-3b8892eae3b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.has_tooltip:nth-child(1) > .la-Download",
+      "targets": [
+        ["css=.has_tooltip:nth-child(1) > .la-Download", "css:finder"],
+        ["xpath=//div[@id='results-list-delivery-toolbar']/div/ul/li[4]/ul/li[3]/button/span", "xpath:idRelative"],
+        ["xpath=//li[4]/ul/li[3]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdb9d4bb-17f0-42e4-8494-ad0259f1a233",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-group > .primary",
+      "targets": [
+        ["css=.button-group > .primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//footer/div/button", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5788",
+      "windowTimeout": 2000
+    }, {
+      "id": "64ad9e9c-af3d-4610-9435-4a1c7e962624",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5788}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "803b34ae-1460-4a6b-9230-aa67fda2f73f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0e85c5b8-8465-4ba1-a7e7-b03de9faa0b3"]
+  }],
+  "urls": ["https://advance.lexis.com/"],
+  "plugins": []
+}
